@@ -1,15 +1,15 @@
-name,cd,group,group_name,group_det,DMV_17STND,unitsres,value
-USA,,1,Countries,,,,1.8
-Portland,,3,US Cities,,,,1.491
-Seattle,,3,US Cities,,,,1.39
-Chicago,,3,US Cities,,,,1.12
-San Francisco,,3,US Cities,,,,1.1
-Philadelphia,,3,US Cities,,,,1.05
-Boston,,3,US Cities,,,,0.94
-Washington DC,,3,US Cities,,,,0.86
-New York City,,3,US Cities,,,,0.63
-Staten Island,,2,NYC Boros,,,,1.49
-Queens,,2,NYC Boros,,,,0.92
-Brooklyn,,2,NYC Boros,,,,0.57
-Bronx,,2,NYC Boros,,,,0.55
-Manhattan,,2,NYC Boros,,,,0.26
+name,group_name,value
+USA,Countries,1.8
+Portland,US Cities,1.491
+Seattle,US Cities,1.39
+Chicago,US Cities,1.12
+San Francisco,US Cities,1.1
+Philadelphia,US Cities,1.05
+Boston,US Cities,0.94
+Washington DC,US Cities,0.86
+New York City,US Cities,0.63
+Staten Island,NYC Boros,1.49
+Queens,NYC Boros,0.92
+Brooklyn,NYC Boros,0.57
+Bronx,NYC Boros,0.55
+Manhattan,NYC Boros,0.26
