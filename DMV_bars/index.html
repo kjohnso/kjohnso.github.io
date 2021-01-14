@@ -3,7 +3,11 @@
 	<head>
 		<meta charset="utf-8">
 		<title>D3: An SVG element tooltip</title>
-		<script type="text/javascript" src="http://d3js.org/d3.v3.min.js"></script>
+
+
+        <script src="https://d3js.org/d3.v6.min.js"></script>
+
+
 		<style type="text/css">
 
 			rect:hover {
@@ -25,17 +29,6 @@
            value="Load /re-Load Data Sorted by Group" 
            onclick="LoadAgain()" />
 		</div>
-
-
-	<div id="option">
-    	<input name="downloadButton" 
-           type="button" 
-           value="Download as PNG" 
-           onclick="svg.download()" />
-		</div>
-
-
-
 
 		
 	<h4></h4>	
@@ -228,35 +221,8 @@
 				   		return xScale(i);
 				   });
 
-
-
-svg.download(() => rasterize(chart), undefined, "Save as PNG")
-rasterize = ƒ(svg)
-			
-
-function rasterize(svg) {
-  let resolve, reject;
-  const promise = new Promise((y, n) => (resolve = y, reject = n));
-  const image = new Image;
-  image.onerror = reject;
-  image.onload = () => {
-    const rect = svg.getBoundingClientRect();
-    const context = DOM.context2d(rect.width, rect.height);
-    context.drawImage(image, 0, 0, rect.width, rect.height);
-    context.canvas.toBlob(resolve);
-  };
-  image.src = URL.createObjectURL(serialize(svg));
-  return promise;
-}
-
 			};			
 			;})}
-
-
-
-
-
-			
 		</script>
 	</body>
 </html>
