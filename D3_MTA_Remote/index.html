@@ -89,6 +89,11 @@ d3.csv("MTA_SubwayAndBusThruEndOf2020.csv",
         )
 
 
+legend = svg.append("g")
+  .attr("class","legend")
+  .attr("transform","translate(50,30)")
+  .style("font-size","12px")
+  .call(d3.legend)
 
 
 
