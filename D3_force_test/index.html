@@ -23,18 +23,35 @@ text {
 <script src="//d3js.org/d3.v4.min.js"></script>
 
 
+<body>
+
+
+  <h3>Transportation Resiliency </h3>
+
+<div id="option">
+      <input name="updateButton" 
+           type="button" 
+           value="Reload" 
+           onclick=location.reload();  />
+    </div>
+
+<h4></h4>
+
+
+
+
+
+
 <script>
 
 var svg = d3.select("svg"),
     width = +svg.attr("width"),
     height = +svg.attr("height");
 1
-var color = d3.scaleOrdinal(["#1f77b4", "#ff7f0e", "#2ca02c","#9467bd", "#8c564b", "#e377c2", "#7f7f7f", "#d62728"]);
-
-
+var color = d3.scaleOrdinal(d3.schemeCategory20);
 
 var simulation = d3.forceSimulation()
-    .force("link", d3.forceLink().id(function(d) { return d.id; }).distance(150))
+    .force("link", d3.forceLink().id(function(d) { return d.id; }).distance(180))
  
    
     .force("charge", d3.forceManyBody().strength(-300))
@@ -114,3 +131,7 @@ function dragended(d) {
 }
 //<script src="https://d3js.org/d3.v4.min.js"></script>
 </script>
+
+</body>
+</html>
+
