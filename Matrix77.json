@@ -8,7 +8,7 @@
 
 
 
-{"id": "Strategic Focus Areas", "group": 1},
+{"id": "Strategic Focus", "group": 1},
 
 {"id": "Traffic Mitigation", "group": 3},
 {"id": "Essential Transportation", "group": 3},
@@ -21,15 +21,15 @@
 {"id": "On-Street Pkg Reform", "group": 7},
 
 
-
+{"id": "TLC GetFoodNYC", "group": 2},
 {"id": "MTA Subway and Bus", "group": 2},
 {"id": "Essential Connector", "group": 2},
-{"id": "TLC for GetFoodNYC", "group": 2},
 
 
-{"id": "E-Bike Legalization", "group": 9},
+
+{"id": "E-Bike", "group": 9},
 {"id": "Citi Bike/ Revel", "group": 9},
-{"id": "New Bike Infrastrucure", "group": 9},
+{"id": "Bike Infrastrucure", "group": 9},
 
 
 {"id": "Open Streets​", "group": 4},
@@ -44,33 +44,33 @@
   "links": [	
 
 
-{"source": "Essential Transportation", "target":  "Strategic Focus Areas", "value": 5},
+{"source": "Essential Transportation", "target":  "Strategic Focus", "value": 5000},
 
-{"source": "TLC for GetFoodNYC", "target":  "Essential Transportation", "value": 5},
-{"source": "Essential Connector", "target":  "Essential Transportation", "value": 5},
-{"source": "MTA Subway and Bus", "target":  "Essential Transportation", "value": 5},
-
-
-
-{"source": "Strategic Focus Areas", "target":  "Outdoor Distancing", "value": 5},
+{"source": "TLC GetFoodNYC", "target":  "Essential Transportation", "value": 5000},
+{"source": "Essential Connector", "target":  "Essential Transportation", "value": 5000},
+{"source": "MTA Subway and Bus", "target":  "Essential Transportation", "value": 5000},
 
 
-{"source": "Open Restaurants​", "target":  "Outdoor Distancing", "value": 5},
-{"source": "Temp Bike Lanes", "target":  "Outdoor Distancing", "value": 5},
-{"source": "Open Streets​", "target":  "Outdoor Distancing", "value": 5},
 
-{"source": "Strategic Focus Areas", "target":  "Micromobility", "value": 5},
-
-{"source": "E-Bike Legalization", "target":  "Micromobility", "value": 5},
-{"source": "New Bike Infrastrucure", "target":  "Micromobility", "value": 5},
-{"source": "Citi Bike/ Revel", "target":  "Micromobility", "value": 5},
+{"source": "Strategic Focus", "target":  "Outdoor Distancing", "value": 1000},
 
 
-{"source": "Strategic Focus Areas", "target":  "Traffic Mitigation", "value": 5},
+{"source": "Open Restaurants​", "target":  "Outdoor Distancing", "value": 1000},
+{"source": "Temp Bike Lanes", "target":  "Outdoor Distancing", "value": 1000},
+{"source": "Open Streets​", "target":  "Outdoor Distancing", "value": 1000},
 
-{"source": "On-Street Pkg Reform", "target":  "Traffic Mitigation", "value": 5},
-{"source": "HOV into CBD", "target":  "Traffic Mitigation", "value": 5},
-{"source": "CBD Tolling", "target":  "Traffic Mitigation", "value": 5}
+{"source": "Strategic Focus", "target":  "Micromobility", "value": 1000},
+
+{"source": "E-Bike", "target":  "Micromobility", "value": 1000},
+{"source": "Bike Infrastrucure", "target":  "Micromobility", "value": 1000},
+{"source": "Citi Bike/ Revel", "target":  "Micromobility", "value": 1000},
+
+
+{"source": "Strategic Focus", "target":  "Traffic Mitigation", "value": 1000},
+
+{"source": "On-Street Pkg Reform", "target":  "Traffic Mitigation", "value": 1000},
+{"source": "HOV into CBD", "target":  "Traffic Mitigation", "value": 1000},
+{"source": "CBD Tolling", "target":  "Traffic Mitigation", "value": 1000}
 
 
 
