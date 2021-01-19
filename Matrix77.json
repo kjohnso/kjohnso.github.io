@@ -44,11 +44,11 @@
   "links": [	
 
 
-{"source": "Essential Transportation", "target":  "Strategic Focus", "value": 5000},
+{"source": "Essential Transportation", "target":  "Strategic Focus", "value": 1000},
 
-{"source": "TLC GetFoodNYC", "target":  "Essential Transportation", "value": 5000},
-{"source": "Essential Connector", "target":  "Essential Transportation", "value": 5000},
-{"source": "MTA Transit", "target":  "Essential Transportation", "value": 5000},
+{"source": "TLC GetFoodNYC", "target":  "Essential Transportation", "value": 1000},
+{"source": "Essential Connector", "target":  "Essential Transportation", "value": 1000},
+{"source": "MTA Transit", "target":  "Essential Transportation", "value": 1000},
 
 
 
