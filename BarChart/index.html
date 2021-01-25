@@ -179,7 +179,7 @@
 				.on("click", function(d) {		
             		d3.select("p").remove();
     				var inx = dataset.indexOf(d);
-					d3.select("body").insert("p").text(dataset2[inx] + " -" +  dataset3[inx]   + " ("  + Math.round(100*dataset[inx],1)/100 + ")");
+					d3.select("body").insert("p").text(dataset2[inx] + " (Veh Per HH = "  + Math.round(100*dataset[inx],1)/100 + ")");
 
 				})
 		
