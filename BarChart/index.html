@@ -117,7 +117,11 @@
 // "#E0E0E0" ----light grey
 // #708090 --- slate gray
 
+<<<<<<< HEAD
     				if (dataset3[inx] ==1) {color = "#FACF5A"   //grey
+=======
+    				if (dataset3[inx] ==1) {color = "#FACF5A"   
+>>>>>>> a804d2e47a67b64720154c561b6887661fbf423d
     				}
     				
     				else if (dataset3[inx] ==2) {color = "#FF5959" // dark orange
@@ -146,6 +150,24 @@
 			   
 			   })
 			
+
+
+			// Create Y-axius create svg element
+			var svg = d3.select("#vertical")
+			  .append("svg")
+			    .attr("width", 1000)
+			    .attr("height", 300)
+
+			// Create the scale
+			var y = d3.scaleLinear()
+			    .domain([0, 2])         // This is what is written on the Axis: from 0 to 100
+			    .range([2, 0]);         // Note it is reversed
+
+			// Draw the axis
+			svg
+			  .append("g")
+			  .attr("transform", "translate(50,0)")      // This controls the vertical position of the Axis
+			  .call(d3.axisLeft(y));
 			  // add interactive code for mouseover any bar
 
 			 //  .on("mouseover", function(d) {
