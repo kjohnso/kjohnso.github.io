@@ -1,9 +1,13 @@
-<!DOCTYPE html>
+
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
 		<title>D3: An SVG element tooltip</title>
-		 <script src="https://d3js.org/d3.v5.min.js"></script>
+
+
+        <script src="//d3js.org/d3.v4.min.js"></script>
+
+
 		<style type="text/css">
 
 			rect:hover {
@@ -17,7 +21,7 @@
 
 		
 
-<h3>Vehicles Per HH by US, Major US Cities, and NYC Boro (no mouseover)</h3>
+<h5>DMV Vehicle Ownership by US City and NYC Boro </h3>
 
 	<div id="option">
     	<input name="updateButton" 
@@ -25,8 +29,6 @@
            value="Load /re-Load Data Sorted by Group" 
            onclick="LoadAgain()" />
 		</div>
-
-
 
 		
 	<h4></h4>	
@@ -117,10 +119,7 @@
 // "#E0E0E0" ----light grey
 // #708090 --- slate gray
 
-
-
-    				if (dataset3[inx] ==1) {color = "#FACF5A"   
-
+    				if (dataset3[inx] ==1) {color = "#708090"   //grey
     				}
     				
     				else if (dataset3[inx] ==2) {color = "#FF5959" // dark orange
@@ -149,50 +148,32 @@
 			   
 			   })
 			
-
-
-			// Create Y-axius create svg element
-			var svg = d3.select("#vertical")
-			  .append("svg")
-			    .attr("width", 1000)
-			    .attr("height", 300)
-
-			// Create the scale
-			var y = d3.scaleLinear()
-			    .domain([0, 2])         // This is what is written on the Axis: from 0 to 100
-			    .range([2, 0]);         // Note it is reversed
-
-			// Draw the axis
-			svg
-			  .append("g")
-			  .attr("transform", "translate(50,0)")      // This controls the vertical position of the Axis
-			  .call(d3.axisLeft(y));
 			  // add interactive code for mouseover any bar
 
-			 //  .on("mouseover", function(d) {
+			   .on("mouseover", function(d) {
 
-			//		//Get this bar's x/y values, then augment for the tooltip
-			//		var xPosition = parseFloat(d3.select(this).attr("x")) + xScale.bandwidth() / 2;
-			//		var yPosition = parseFloat(d3.select(this).attr("y")) + 14;
+					//Get this bar's x/y values, then augment for the tooltip
+					var xPosition = parseFloat(d3.select(this).attr("x")) + xScale.bandwidth() / 2;
+					var yPosition = parseFloat(d3.select(this).attr("y")) + 14;
 
 					//Create the tooltip label
-					//svg.append("text")
-					//   .attr("id", "tooltip")
-					//   .attr("x", xPosition)
-					//   .attr("y", yPosition)
-					 //  .attr("text-anchor", "middle")
-					 //  .attr("font-family", "sans-serif")
-					 //  .attr("font-size", "11px")
-					 //  .attr("font-weight", "bold")
-					 //  .attr("fill", "black")
-					 //  .text(Math.round(100*d,1)/100);
+					svg.append("text")
+					   .attr("id", "tooltip")
+					   .attr("x", xPosition)
+					   .attr("y", yPosition)
+					   .attr("text-anchor", "middle")
+					   .attr("font-family", "sans-serif")
+					   .attr("font-size", "11px")
+					   .attr("font-weight", "bold")
+					   .attr("fill", "black")
+					   .text(Math.round(100*d,1)/100);
 
-			//   })
-			//   .on("mouseout", function() {
+			   })
+			   .on("mouseout", function() {
 			   
 					//Remove the tooltip
-			//		d3.select("#tooltip").remove();
-			//	 })	
+					d3.select("#tooltip").remove();
+				 })	
 
 
 // add response to user clicking on any bar - will show data about bar under the chart
@@ -200,7 +181,7 @@
 				.on("click", function(d) {		
             		d3.select("p").remove();
     				var inx = dataset.indexOf(d);
-					d3.select("body").insert("p").text(dataset2[inx] + " (Veh Per HH = "  + Math.round(100*dataset[inx],1)/100 + ")");
+					d3.select("body").insert("p").text(dataset2[inx] + " ("  + Math.round(100*dataset[inx],1)/100 + ")");
 
 				})
 		
@@ -240,35 +221,8 @@
 				   		return xScale(i);
 				   });
 
-
-
-svg.download(() => rasterize(chart), undefined, "Save as PNG")
-rasterize = ƒ(svg)
-			
-
-function rasterize(svg) {
-  let resolve, reject;
-  const promise = new Promise((y, n) => (resolve = y, reject = n));
-  const image = new Image;
-  image.onerror = reject;
-  image.onload = () => {
-    const rect = svg.getBoundingClientRect();
-    const context = DOM.context2d(rect.width, rect.height);
-    context.drawImage(image, 0, 0, rect.width, rect.height);
-    context.canvas.toBlob(resolve);
-  };
-  image.src = URL.createObjectURL(serialize(svg));
-  return promise;
-}
-
 			};			
 			;})}
-
-
-
-
-
-			
 		</script>
 	</body>
 </html>
