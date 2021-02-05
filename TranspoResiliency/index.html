@@ -129,7 +129,9 @@
             .call(d3.drag()
                 .on("start", dragStart)
                 .on("drag", dragDone)
-            );
+                .on("end", dragended)
+
+           );
 
         // add the node circle with the specific colors and radius
         
@@ -227,6 +229,19 @@
             d.fx = d3.event.x;
             d.fy = d3.event.y;
         }
+
+
+        function dragended(d) {
+             if (!d3.event.active) simulation.alphaTarget(0);
+                d.fx = null;
+                d.fy = null;
+                }
+
+
+
+
+
+
 
         function simulation_tick() {
             link
