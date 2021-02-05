@@ -1,126 +1,243 @@
 <!DOCTYPE html>
-<meta charset="utf-8">
+<head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.7.0/d3.js"></script>
+</head>
+<body>
+    <script>
+        
+  var nodes = [
 
 
 
-<style>
-
-.links line {
-  stroke: #D3D3D3;
-  stroke-opacity: 0.6;
-}
-
-.nodes circle {
-  stroke: #fff;
-  stroke-width: 1.5px;
-}
-
-text {
-  font-family: sans-serif;
-  font-size: 10px;
-}
-
-</style>
-<svg width="900" height="900"></svg>
 
 
-<script src="https://d3js.org/d3.v4.min.js"></script>
+{"id": "Strategic Focus Areas", "group": 1},
 
-<script>
+{"id": "Traffic Mitigation", "group": 3},
+{"id": "Essential Transportation", "group": 3},
+{"id": "Micromobility", "group": 3},
+{"id": "Outdoor Distancing", "group": 3},
 
-var margin = {top: 0, right: 0, bottom: 0, left: 0};
-  
-//var center_force = d3.forceCenter(width / 2, height / 5);   
-  
-var svg = d3.select("svg"),
-    width = +svg.attr("width"),
-    height = +svg.attr("height");
-1
-var color = d3.scaleOrdinal(["#1f77b4", "#ff7f0e", "#2ca02c","#9467bd", "#8c564b", "#e377c2", "#7f7f7f", "#d62728"]);
+
+{"id": "HOV into CBD", "group": 7},
+{"id": "CBD Tolling", "group": 7},
+{"id": "On-Street Pkg Reform", "group": 7},
 
 
 
-var simulation = d3.forceSimulation()
-    .force("link", d3.forceLink().id(function(d) { return d.id; }).distance(150))
- 
-   
-    .force("charge", d3.forceManyBody().strength(-300))
+{"id": "MTA Subway and Bus", "group": 2},
+{"id": "Misc Connectors", "group": 2},
+{"id": "TLC for GetFoodNYC", "group": 2},
 
-    .force("center", d3.forceCenter(width / 2, height / 3));
 
-d3.json("Matrix77.json", function(error, graph) {
-  if (error) throw error;
+{"id": "E-Bike Legalization", "group": 9},
+{"id": "Citi Bike/ Revel", "group": 9},
+{"id": "New Bike Infrastrucure", "group": 9},
 
-  var link = svg.append("g")
-      .attr("class", "links")
 
-    .selectAll("line")
-    .data(graph.links)
-    .enter().append("line")
-      .attr("stroke-width", function(d) { return Math.sqrt(d.value); });
+{"id": "Open Streets​", "group": 4},
+{"id": "Open Restaurants​", "group": 4},
+{"id": "Temp Bike Lanes", "group": 4}
 
-  var node = svg.append("g")
-      .attr("class", "nodes")
-    .selectAll("g")
-    .data(graph.nodes)
-    .enter().append("g")
+
+
+
+  ];   
     
-  var circles = node.append("circle")
-      .attr("r", 5)
-      .attr("fill", function(d) { return color(d.group); })
-      .call(d3.drag()
-          .on("start", dragstarted)
-          .on("drag", dragged)
-          .on("end", dragended));
+      
 
-  var lables = node.append("text")
-      .text(function(d) {
-        return d.id;
-      })
-      .attr('x', 6)
-      .attr('y', 3);
+        var links = [ 
 
-  node.append("title")
-      .text(function(d) { return d.id; });
 
-  simulation
-      .nodes(graph.nodes)
-      .on("tick", ticked);
+{"source": "Strategic Focus Areas", "target":  "Essential Transportation", "value": 5},
 
-  simulation.force("link")
-      .links(graph.links);
+{"source": "TLC for GetFoodNYC", "target":  "Essential Transportation", "value": 5},
+{"source": "Misc Connectors", "target":  "Essential Transportation", "value": 5},
+{"source": "MTA Subway and Bus", "target":  "Essential Transportation", "value": 5},
 
-  function ticked() {
-    link
-        .attr("x1", function(d) { return d.source.x; })
-        .attr("y1", function(d) { return d.source.y; })
-        .attr("x2", function(d) { return d.target.x; })
-        .attr("y2", function(d) { return d.target.y; });
 
-    node
-        .attr("transform", function(d) {
-          return "translate(" + d.x + "," + d.y + ")";
-        })
-  }
-});
 
-function dragstarted(d) {
-  if (!d3.event.active) simulation.alphaTarget(0.3).restart();
-  d.fx = d.x;
-  d.fy = d.y;
-}
+{"source": "Strategic Focus Areas", "target":  "Outdoor Distancing", "value": 5},
 
-function dragged(d) {
-  d.fx = d3.event.x;
-  d.fy = d3.event.y;
-}
 
-function dragended(d) {
-  if (!d3.event.active) simulation.alphaTarget(0);
-  d.fx = null;
-  d.fy = null;
-}
+{"source": "Open Restaurants​", "target":  "Outdoor Distancing", "value": 5},
+{"source": "Temp Bike Lanes", "target":  "Outdoor Distancing", "value": 5},
+{"source": "Open Streets​", "target":  "Outdoor Distancing", "value": 5},
 
+{"source": "Strategic Focus Areas", "target":  "Micromobility", "value": 5},
+
+{"source": "E-Bike Legalization", "target":  "Micromobility", "value": 5},
+{"source": "New Bike Infrastrucure", "target":  "Micromobility", "value": 5},
+{"source": "Citi Bike/ Revel", "target":  "Micromobility", "value": 5},
+
+
+{"source": "Strategic Focus Areas", "target":  "Traffic Mitigation", "value": 5},
+
+{"source": "On-Street Pkg Reform", "target":  "Traffic Mitigation", "value": 5},
+{"source": "HOV into CBD", "target":  "Traffic Mitigation", "value": 5},
+{"source": "CBD Tolling", "target":  "Traffic Mitigation", "value": 5}
+
+
+
+
+  ]; 
   
-//<script src="https://d3js.org/d3.v4.min.js"></script>
-</script>
+
+
+        var width = 2000;
+        var height = 1000;
+        var svg = d3.select("body")
+            .append("svg")
+            .attr("width", width)
+            .attr("height", height);
+
+        var g = svg.append("g");
+
+        var simulation = d3.forceSimulation().nodes(nodes);
+
+        // set up the forces
+        var link = d3.forceLink(links).id(function (d) { return d.id; }).distance(120).strength(1);
+        var charge = d3.forceManyBody().strength(-1000);
+        var forceX = d3.forceX().x(width / 3).strength(.05);
+        var forceY = d3.forceY().y(height / 3).strength(.05);
+
+        // apply the forces
+        simulation
+            .force("link", link)
+            .force("charge", charge)
+            .force("forceX", forceX)
+            .force("forceY", forceY)
+            ;
+
+        //add tick instructions:
+        simulation.on("tick", simulation_tick);
+
+        var link = g
+            .selectAll("line")
+            .data(links)
+            .enter()
+            .append("line")
+            .attr("stroke-width", 2)
+            .attr("stroke", "#ddd");
+
+        //group the nodes together for easier ticking
+        var node = g.selectAll("g")
+            .data(nodes)
+            .enter()
+            .append("g")
+            .attr("class", "node")
+            .call(d3.drag()
+                .on("start", dragStart)
+                .on("drag", dragDone)
+            );
+
+        // add the node circle with the specific colors and radius
+        
+        var radius = 10
+
+        node
+            .append("circle")
+            .attr("r", radius)
+            .attr("fill", fillColor);
+
+        /*function radius(d) {
+            if (d.nodeType == "A") {
+                return 10;
+            } else {
+                if (d.program == "Mercury") {
+                    return 15;
+                }
+                else {
+                    return 24;
+                }
+            }
+        }*/
+
+
+        function fillColor(d) {
+            if (d.group == "9") {
+                return "pink";
+            } else {
+                if (d.group == "4") {
+                  return "lightblue";
+                  }
+
+
+                else {
+                if (d.group == "2") {
+                  return "#b19cd9";
+                  }
+
+
+                else {
+                if (d.group == "1") {
+                  return "#6495ED";
+                  }
+
+                else {
+                if (d.group == "7") {
+                  return "lightgreen";
+                  }
+
+
+
+                  else {
+                      return "orange";
+            }
+        }
+
+    }
+
+}
+
+}
+
+}
+
+        // add the name label
+        node
+            .append("text")
+            .attr("font-size", "10pt")
+            .attr("font-family", "Arial")
+
+        /*    .attr("font-family", "Arial")
+            .attr("font-size", "6pt")
+            .attr("dx", "-30")
+            .attr("style", "stroke:black") */
+            .text(function (d) { return d.id });
+
+        // attach the zoom handler
+        var zoom_handler = d3.zoom()
+            .on("zoom", zoom_actions);
+
+        zoom_handler(svg);
+
+        //Zoom functions
+        function zoom_actions() {
+            g.attr("transform", d3.event.transform)
+        }
+
+        function dragStart(d) {
+            if (!d3.event.active) simulation.alphaTarget(0.3).restart()
+            d.fx = d.x;
+            d.fy = d.y;
+        }
+
+        function dragDone(d) {
+            d.fx = d3.event.x;
+            d.fy = d3.event.y;
+        }
+
+        function simulation_tick() {
+            link
+                .attr("x1", function (d) { return d.source.x; })
+                .attr("y1", function (d) { return d.source.y; })
+                .attr("x2", function (d) { return d.target.x; })
+                .attr("y2", function (d) { return d.target.y; });
+
+            node
+                .attr("transform", function (d) { return "translate(" + d.x + ", " + d.y + ")"; });
+        }
+    </script>
+</body>
+</html>
