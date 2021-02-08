@@ -158,6 +158,8 @@
 					var xPosition = parseFloat(d3.select(this).attr("x")) + xScale.bandwidth() / 2;
 					var yPosition = parseFloat(d3.select(this).attr("y")) + 14;
 
+                    var inx = dataset.indexOf(d);
+
 					//Create the tooltip label
 					svg.append("text")
 					   .attr("id", "tooltip")
@@ -168,24 +170,49 @@
 					   .attr("font-size", "11px")
 					   .attr("font-weight", "bold")
 					   .attr("fill", "black")
-					   .text(Math.round(100*d,1)/100);
+                       .text(Math.round(100*d,1)/100); 
+                    
+
+
+					svg.append("text")
+					   .attr("id", "tooltip2")
+					   .attr("x", xPosition)
+					   .attr("y", yPosition)
+					   .attr("text-anchor", "middle")
+					   .attr("font-family", "sans-serif")
+					   .attr("font-size", "11px")
+					   .attr("font-weight", "bold")
+					   .attr("fill", "black")
+					   .attr("dy", "1em")
+		               .text(dataset2[inx]);
+
+               /*        .text(Math.round(100*d,1)/100); */
+                    
+
+
+
+
+
 
 			   })
 			   .on("mouseout", function() {
 			   
 					//Remove the tooltip
+					d3.select("#tooltip2").remove();
 					d3.select("#tooltip").remove();
+				
+
 				 })	
 
 
 // add response to user clicking on any bar - will show data about bar under the chart
 
-				.on("click", function(d) {		
+			/*	.on("click", function(d) {		
             		d3.select("p").remove();
     				var inx = dataset.indexOf(d);
-					d3.select("body").insert("p").text(dataset2[inx] + " ("  + Math.round(100*dataset[inx],1)/100 + ")");
+					d3.select("body").insert("p").text(dataset2[inx] + " ("  + Math.round(100*dataset[inx],1)/100 + ")"); 
 
-				})
+				}).   */
 		
 // add response to user double clicing any bar - will resort data as a transition with a duration
 
@@ -201,6 +228,10 @@
 			var sortBars = function() {
 
 				//Flip value of sortOrder
+                // Get rid of label under bar replacing with empty string
+       
+
+
 			   	sortOrder = !sortOrder;
 
 
@@ -228,5 +259,3 @@
 		</script>
 	</body>
 </html>
-
-
