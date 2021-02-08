@@ -1,0 +1,102 @@
+{	
+  "nodes": [	
+
+
+	
+
+{"id": "Land Use/ Zoning", "group": 6},
+{"id": "Demographics", "group": 6},
+
+
+
+{"id": "DMV_Reg", "group": 2},
+
+{"id": "DOB", "group": 2},
+{"id": "DCA_Pkg", "group": 2},
+{"id": "MN_Core", "group": 2},
+
+
+
+{"id": "Reqd_Pkg", "group": 2},
+{"id": "Afd_Hsg", "group": 2},
+{"id": "Cns_ACS", "group": 2},
+
+{"id": "QCEW", "group": 2},
+{"id": "CTPP", "group": 2},
+{"id": "PLUTO", "group": 2},
+{"id": "BLS", "group": 2},
+
+{"id": "Transportation", "group": 5},
+
+{"id": "Veh_Cnts", "group": 4},
+{"id": "Crashes", "group": 4},
+{"id": "FHV", "group": 4},
+{"id": "Bike", "group": 4},
+{"id": "Bus", "group": 4},
+{"id": "Subway", "group": 4},
+{"id": "Ferry", "group": 4},
+{"id": "Rail", "group": 4},
+{"id": "Hub_Bnd", "group": 4},
+{"id": "Trvl_Sheds", "group": 4},
+
+{"id": "BPM", "group": 4},
+
+{"id": "LION", "group": 4}
+
+
+
+
+
+
+
+
+
+		
+	
+  ],	
+	
+  "links": [	
+	
+
+{"source":"Land Use/ Zoning", "target": "DCA_Pkg", "value": 5},
+
+{"source":"Land Use/ Zoning", "target": "DOB", "value": 5},
+
+
+{"source":"Land Use/ Zoning", "target": "Reqd_Pkg", "value": 5},
+{"source":"Land Use/ Zoning", "target": "MN_Core", "value": 5},
+
+
+
+{"source":"Land Use/ Zoning", "target": "Afd_Hsg", "value": 5},
+
+{"source":"Land Use/ Zoning", "target": "PLUTO", "value": 5},
+
+{"source":"Demographics", "target": "CTPP", "value": 5},
+{"source":"Demographics", "target": "Cns_ACS", "value": 5},
+{"source":"Demographics", "target": "QCEW", "value": 5},
+{"source":"Demographics", "target": "DMV_Reg", "value": 5},
+
+
+{"source":"Demographics", "target": "BLS", "value": 5},
+
+
+{"source":"Transportation", "target": "Veh_Cnts", "value": 5},
+{"source":"Transportation", "target": "Crashes", "value": 5},
+{"source":"Transportation", "target": "FHV", "value": 5},
+{"source":"Transportation", "target": "Bike", "value": 5},
+{"source":"Transportation", "target": "Bus", "value": 5},
+{"source":"Transportation", "target": "Subway", "value": 5},
+{"source":"Transportation", "target": "Ferry", "value": 5},
+{"source":"Transportation", "target": "Rail", "value": 5},
+{"source":"Transportation", "target": "Trvl_Sheds", "value": 5},
+{"source":"Transportation", "target": "LION", "value": 5},
+{"source":"Transportation", "target": "BPM", "value": 5},
+{"source":"Transportation", "target": "Hub_Bnd", "value": 5}
+
+
+
+
+
+  ]	
+}	
