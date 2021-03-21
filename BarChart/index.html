@@ -1,9 +1,9 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
-		<title>D3: An SVG element tooltip</title>
+		<title>D3: Bar Chart</title>
 
-
+         <link rel="stylesheet" type="text/css" href="https://codepen.io/chriddyp/pen/bWLwgP.css">
          <script src="https://d3js.org/d3.v5.min.js"></script>
 
 
@@ -12,6 +12,19 @@
 			rect:hover {
 				fill: lightgrey;
 			}
+        
+
+        body {
+            margin-left: 90px;
+            margin-top: 90px;
+          
+
+        }
+
+   h5{margin-bottom: 20px;
+            margin-top: 20px; }
+
+s
 
 		</style>
 	</head>
@@ -20,23 +33,28 @@
 
 		
 
-<h3>Vehicle Ownership by US City and NYC Boro </h3>
+<h3>Vehicle Ownership by US City and NYC Borough </h3>
 
 
 
 	<div id="option">
     	<input name="updateButton" 
            type="button" 
-           value="Load /Re-Load Data Sorted by Geo Group" 
+           value="Load /Re-Load Bars Sorted by Geography Group" 
            onclick="LoadAgain()" />
 		</div>
 
+
+	<p></p>	
+ 
+
+
  <h5 style="color:grey;font-size:14px;">
-      (Click / Double-click to see data and sort bars)
+      Hover over individual bars to see Geography name, and Vehicles per Household according the US Census ACS; Double-click any bar to sort.
     </h5>
 
 		
-	<h4></h4>	
+	<p></p>	
 
 	
 		<script type="text/javascript">
