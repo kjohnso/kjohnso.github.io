@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <meta charset="utf-8">
 <head>
@@ -5,11 +6,16 @@
 </head>
 
 <style>
-	body {
-		font-family: "Helvetica Neue", Helvetica, sans-serif;
-		font-size: 12px;
+
+
+   
+	.node text {
+	  font-size:12px; 
+	  font-family:sans-serif;
 
 	}
+
+
 
 	.links path {
 		fill: none;
@@ -58,6 +64,7 @@ function make(root) {
 
 	enteringNodes
 		.append('text')
+
 		.attr('x', 5)
 		.attr('y', 4)
 		.text(function(d) {
@@ -70,6 +77,7 @@ function make(root) {
 			}
 
 			return '';
+
 		})
 
 		;
@@ -103,6 +111,9 @@ function ready(err, data) {
 	treeLayout(root);
 	make(root);
 }
+
+
+
 
 d3.csv('treedata.csv', ready);
 	</script>
