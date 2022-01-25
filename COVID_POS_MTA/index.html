@@ -30,6 +30,19 @@ var margin = {top: 30, right: 40, bottom: 30, left: 50},
 
 var parseDate = d3.time.format("%d-%b-%y").parse;
 
+
+
+
+
+
+
+
+
+
+
+
+
+
 var x = d3.time.scale().range([0, width]);
 var y0 = d3.scale.linear().range([height, 0]);
 var y1 = d3.scale.linear().range([height, 0]);
@@ -63,14 +76,23 @@ var svg = d3.select("body")
 d3.csv("data2a.csv", function(error, data) {
     data.forEach(function(d) {
         d.date = parseDate(d.date);
+
         d.close = +d.close;
         d.open = +d.open;
     });
 
+
+  
+
     // Scale the range of the data
-    x.domain(d3.extent(data, function(d) { return d.date; }));
+    x.domain(d3.extent(data, function (d) { return d.date; }));
+
+
     y0.domain([0, d3.max(data, function(d) {
 		return Math.max(d.close); })]); 
+
+    
+
     y1.domain([0, d3.max(data, function(d) { 
 		return Math.max(d.open); })]);
 
@@ -97,13 +119,37 @@ d3.csv("data2a.csv", function(error, data) {
         .style("fill", "red")		
         .call(yAxisRight);
 
-
+    
     svg.append("text")
         .attr("x", (width / 2))             
         .attr("y", 0 - (margin.top / 2))
+
         .attr("text-anchor", "middle")  
-        .style("font-size", "16px") 
-        .text("Subway Ridership (mm) vs. COVID Positivity, 7-Day Avg thru 1/23/2022");
+        .style("font-size", "14px") 
+        .style("fill", "steelblue")
+        .text("Subway Ridership (mm)");  
+
+    svg.append("text")
+        .attr("x", (width / 2))
+        .attr("y", 2 - (margin.top / 16))
+      
+        .attr("text-anchor", "middle")
+        .style("font-size", "14px")
+        .style("fill", "red")
+        .text("COVID Test Positivity");  
+
+
+    svg.append("text")
+        .attr("x", (width / 2))
+        .attr("y", 240 - (margin.top / 24))
+        .attr("text-anchor", "middle")
+        .style("font-size", "8px")
+        .style("fill", "grey")
+        .text(x.domain()); 
+
+
+
+
 
 
 
