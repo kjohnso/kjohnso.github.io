@@ -1,0 +1,71 @@
+{	
+  "nodes": [	
+
+
+{"id": "Hobbies", "group": 9},
+
+{"id": "Art", "group": 3},
+{"id": "Coding", "group": 6},
+{"id": "Wellness", "group": 8},
+
+{"id": "Photography", "group": 2},
+
+{"id": "Drawing", "group": 2},
+{"id": "Painting", "group": 2},
+
+
+
+
+{"id": "Plotly", "group": 2},
+
+{"id": "D3", "group": 2},
+
+{"id": "Websites", "group": 2},
+
+
+
+
+{"id": "Cooking", "group": 2},
+{"id": "Ceramics", "group": 2},
+
+{"id": "Yoga", "group": 2},
+{"id": "Swimming", "group": 2},
+{"id": "Walking", "group": 2}
+	
+  ],	
+	
+  "links": [	
+	
+
+{"source":"Art", "target": "Drawing", "value": 5},
+
+
+
+
+{"source":"Art", "target": "Painting", "value": 5},
+{"source":"Art", "target": "Hobbies", "value": 5},
+{"source":"Art", "target": "Photography", "value": 5},
+
+{"source":"Coding", "target": "Websites", "value": 5},
+
+
+{"source":"Coding", "target": "Plotly", "value": 5},
+{"source":"Coding", "target": "D3", "value": 5},
+{"source":"Coding", "target": "Hobbies", "value": 5},
+
+
+
+{"source":"Wellness", "target": "Cooking", "value": 5},
+{"source":"Art", "target": "Ceramics", "value": 5},
+
+
+
+{"source":"Wellness", "target": "Hobbies", "value": 5},
+{"source":"Wellness", "target": "Yoga", "value": 5},
+{"source":"Wellness", "target": "Swimming", "value": 5},
+{"source":"Wellness", "target": "Walking", "value": 5}
+
+
+
+  ]	
+}	
