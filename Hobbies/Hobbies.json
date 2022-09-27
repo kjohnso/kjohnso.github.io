@@ -3,48 +3,63 @@
 
 
 
-
-{"id": "Art Projects", "group": 3},
+{"id": "Entertainment", "group": 1},
+{"id": "Creativity", "group": 3},
 
 {"id": "Wellness", "group": 8},
 
-{"id": "Entertainment", "group": 1},
+{"id": "Fitness", "group": 7},
+
+
 
 {"id": "Socializing", "group": 0},
 
 
-{"id": "Photography", "group": 2},
-{"id": "Drawing", "group": 2},
-{"id": "Painting", "group": 2},
+
+{"id": "Visual Arts", "group": 2},
 {"id": "Coding", "group": 2},
 
 
 
-{"id": "Websites", "group": 2},
-{"id": "TV/Video", "group": 2},
-{"id": "Movies", "group": 2},
+{"id": "Web/Media", "group": 2},
+{"id": "Movies/Video", "group": 2},
 
 
 
-{"id": "Parties", "group": 2},
+
 {"id": "Museums", "group": 2},
 {"id": "Shopping", "group": 2},
 {"id": "Travel", "group": 2},
+{"id": "Shopping", "group": 2},
+{"id": "Events", "group": 2},
 {"id": "Restaurants", "group": 2},
 
 
-{"id": "Pods/Audio", "group": 2},
+{"id": "Music/Audio", "group": 2},
 {"id": "Reading", "group": 2},
+{"id": "Styling", "group": 2},
+
 
 
 {"id": "Cooking", "group": 2},
-{"id": "Ceramics", "group": 2},
 
 
-{"id": "Yoga", "group": 2},
+
 {"id": "Swimming", "group": 2},
-{"id": "Walking", "group": 2}
+{"id": "Yoga", "group": 2},
 
+{"id": "Walking", "group": 2},
+{"id": "Puzzles", "group": 2},
+
+
+
+
+
+
+{"id": "Family", "group": 2},
+{"id": "Meditation", "group": 2},
+{"id": "Friends", "group": 2},
+{"id": "Nature", "group": 2}
 
 	
   ],	
@@ -56,49 +71,64 @@
 
 
 
+{"source":"Fitness", "target": "Wellness", "value": 5},
 
 
 {"source":"Socializing", "target": "Wellness", "value": 5},
 
 
+{"source":"Entertainment", "target": "Wellness", "value": 5},
 
-{"source":"Art Projects", "target": "Wellness", "value": 5},
-
-
-
-{"source":"Art Projects", "target": "Drawing", "value": 5},
-{"source":"Art Projects", "target": "Painting", "value": 5},
-{"source":"Art Projects", "target": "Photography", "value": 5},
-{"source":"Art Projects", "target": "Ceramics", "value": 5},
-{"source":"Art Projects", "target": "Coding", "value": 5},
-
-
-
-{"source":"Wellness", "target": "Cooking", "value": 5},
-{"source":"Wellness", "target": "Yoga", "value": 5},
-{"source":"Wellness", "target": "Swimming", "value": 5},
-{"source":"Wellness", "target": "Walking", "value": 5},
+{"source":"Creativity", "target": "Wellness", "value": 5},
 
 
 
 
-{"source":"Socializing", "target": "Parties", "value": 5},
-{"source":"Socializing", "target": "Movies", "value": 5},
-{"source":"Socializing", "target": "Museums", "value": 5},
+
+
+{"source":"Wellness", "target": "Family", "value": 5},
+{"source":"Wellness", "target": "Friends", "value": 5},
+{"source":"Wellness", "target": "Nature", "value": 5},
+{"source":"Wellness", "target": "Meditation", "value": 5},
+
+
+
+
+{"source":"Creativity", "target": "Visual Arts", "value": 5},
+
+{"source":"Creativity", "target": "Coding", "value": 5},
+{"source":"Creativity", "target": "Styling", "value": 5},
+
+{"source":"Creativity", "target": "Cooking", "value": 5},
+
+
+{"source":"Fitness", "target": "Yoga", "value": 5},
+{"source":"Fitness", "target": "Swimming", "value": 5},
+{"source":"Fitness", "target": "Walking", "value": 5},
+{"source":"Fitness", "target": "Puzzles", "value": 5},
+
+
+
+
+
+
+
+{"source":"Socializing", "target": "Events", "value": 5},
 {"source":"Socializing", "target": "Travel", "value": 5},
+
+{"source":"Socializing", "target": "Museums", "value": 5},
 {"source":"Socializing", "target": "Shopping", "value": 5},
 {"source":"Socializing", "target": "Restaurants", "value": 5},
 
 
 
 
-{"source":"Entertainment", "target": "Wellness", "value": 5},
 
-{"source":"Entertainment", "target": "Websites", "value": 5},
-{"source":"Entertainment", "target": "Pods/Audio", "value": 5},
+{"source":"Entertainment", "target": "Web/Media", "value": 5},
+{"source":"Entertainment", "target": "Music/Audio", "value": 5},
 {"source":"Entertainment", "target": "Reading", "value": 5},
-{"source":"Entertainment", "target": "TV/Video", "value": 5}
 
+{"source":"Entertainment", "target": "Movies/Video", "value": 5}
 
 
 
