@@ -11,13 +11,14 @@
 {"id": "Fitness", "group": 7},
 
 
-
 {"id": "Socializing", "group": 0},
 
 
 
+
+
 {"id": "Visual Arts", "group": 2},
-{"id": "Coding", "group": 2},
+
 
 
 
@@ -38,12 +39,11 @@
 {"id": "Music/Audio", "group": 2},
 {"id": "Reading", "group": 2},
 {"id": "Styling", "group": 2},
-
+{"id": "Coding", "group": 2},
 
 
 {"id": "Cooking", "group": 2},
 
-{"id": "Community", "group": 2},
 
 {"id": "Yoga", "group": 2},
 {"id": "Swimming", "group": 2},
@@ -58,6 +58,8 @@
 
 
 {"id": "Family", "group": 2},
+
+{"id": "Community", "group": 2},
 {"id": "Meditation", "group": 2},
 {"id": "Friends", "group": 2},
 {"id": "Nature", "group": 2}
