@@ -3,22 +3,17 @@
 
 
 
-
+{"id": "Entertainment", "group": 1},
 {"id": "Creativity", "group": 3},
 
 {"id": "Wellness", "group": 8},
 
-{"id": "Entertainment", "group": 1},
-
-
-{"id": "Nature", "group": 5},
+{"id": "Fitness", "group": 7},
 
 
 
 {"id": "Socializing", "group": 0},
-{"id": "Fitness", "group": 7},
 
-{"id": "Relationships", "group": 4},
 
 
 {"id": "Visual Arts", "group": 2},
@@ -26,19 +21,12 @@
 
 
 
-{"id": "Web", "group": 2},
-{"id": "Movies", "group": 2},
+{"id": "Web/Media", "group": 2},
+{"id": "Movies/Video", "group": 2},
 
 
 
 
-
-
-
-
-
-
-{"id": "Community", "group": 2},
 {"id": "Museums", "group": 2},
 {"id": "Shopping", "group": 2},
 {"id": "Travel", "group": 2},
@@ -46,34 +34,33 @@
 {"id": "Events", "group": 2},
 {"id": "Restaurants", "group": 2},
 
-{"id": "Reading", "group": 2},
-{"id": "Music/Audio", "group": 2},
 
+{"id": "Music/Audio", "group": 2},
+{"id": "Reading", "group": 2},
 {"id": "Styling", "group": 2},
 
 
 
 {"id": "Cooking", "group": 2},
 
+{"id": "Community", "group": 2},
 
-
-{"id": "Swimming", "group": 2},
 {"id": "Yoga", "group": 2},
+{"id": "Swimming", "group": 2},
+
 
 {"id": "Walking", "group": 2},
 
 
-{"id": "Environment", "group": 2},
-{"id": "Animals", "group": 2},
-{"id": "Plants", "group": 2},
+
 
 
 
 
 {"id": "Family", "group": 2},
 {"id": "Meditation", "group": 2},
-{"id": "Friends", "group": 2}
-
+{"id": "Friends", "group": 2},
+{"id": "Nature", "group": 2}
 
 	
   ],	
@@ -98,22 +85,12 @@
 
 
 
-{"source":"Relationships", "target": "Family", "value": 5},
-{"source":"Relationships", "target": "Friends", "value": 5},
+
+
+{"source":"Wellness", "target": "Family", "value": 5},
+{"source":"Wellness", "target": "Friends", "value": 5},
 {"source":"Wellness", "target": "Nature", "value": 5},
-
-
-{"source":"Wellness", "target": "Relationships", "value": 5},
-
-
-
-
-{"source":"Community", "target": "Relationships", "value": 5},
-
-
-
-
-{"source":"Fitness", "target": "Meditation", "value": 5},
+{"source":"Wellness", "target": "Community", "value": 5},
 
 
 
@@ -129,11 +106,7 @@
 {"source":"Fitness", "target": "Yoga", "value": 5},
 {"source":"Fitness", "target": "Swimming", "value": 5},
 {"source":"Fitness", "target": "Walking", "value": 5},
-
-
-{"source":"Nature", "target": "Animals", "value": 5},
-{"source":"Nature", "target": "Plants", "value": 5},
-{"source":"Nature", "target": "Environment", "value": 5},
+{"source":"Fitness", "target": "Meditation", "value": 5},
 
 
 
@@ -152,11 +125,11 @@
 
 
 
-{"source":"Entertainment", "target": "Web", "value": 5},
+{"source":"Entertainment", "target": "Web/Media", "value": 5},
 {"source":"Entertainment", "target": "Music/Audio", "value": 5},
 {"source":"Entertainment", "target": "Reading", "value": 5},
 
-{"source":"Entertainment", "target": "Movies", "value": 5}
+{"source":"Entertainment", "target": "Movies/Video", "value": 5}
 
 
 
