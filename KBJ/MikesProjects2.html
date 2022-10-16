@@ -7,6 +7,7 @@
 body {font-family: Verdana, sans-serif; 
 
 
+
 margin-left: 10px;
 margin-right: 10px;
 
@@ -33,7 +34,7 @@ img {vertical-align: middle;}
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 1000px;
+  max-width: 900px;
   position: relative;
   margin: auto;
 
@@ -120,14 +121,7 @@ flex: 33%;
 max-width: 100%;
 }
 }
-@media screen and (max-width: 600px) {
-.inner-grid {
-flex: 100%;
-max-width: 100%;
-}
-}
- 
- 
+
 @media only screen and (max-device-width: 480px) and (orientation: landscape){
 .inner-grid {
 flex: 33%;
@@ -141,31 +135,15 @@ max-width: 100%;
 
 
 
-
-
-
 </style>
 </head>
 <body>
 
 <div class="slideshow-container">
+<div class="mySlides"><img src='MikesProjects/00KensGuit4.jpg' style = "width:100%" ></div> <div class="mySlides"><img src='MikesProjects/01KensGuitar.jpg' style = "width:100%" ></div> <div class="mySlides"><img src='MikesProjects/02KenGuit3.jpg' style = "width:100%" ></div> <div class="mySlides"><img src='MikesProjects/03KenGuit2.jpg' style = "width:100%" ></div> <div class="mySlides"><img src='MikesProjects/04KenGuit1.JPG' style = "width:100%" ></div> <div class="mySlides"><img src='MikesProjects/220RenGuit1.jpg' style = "width:100%" ></div> <div class="mySlides"><img src='MikesProjects/221RenGuity.jpg' style = "width:100%" ></div> <div class="mySlides"><img src='MikesProjects/222RenGuit.jpg' style = "width:100%" ></div> <div class="mySlides"><img src='MikesProjects/223RenGuitJPG.JPG' style = "width:100%" ></div> <div class="mySlides"><img src='MikesProjects/331RenAmp.JPG' style = "width:100%" ></div> <div class="mySlides"><img src='MikesProjects/332RenAmp.JPG' style = "width:100%" ></div> 
 
-<div class="mySlides">
 
-  <img src="image1.jpg" style="width:100%">
-</div>
 
-<div class="mySlides">
-
-  <img src="image2.jpg" style="width:100%">
-
-</div>
-
-<div class="mySlides">
-
-  <img src="image3.jpg" style="width:100%">
-
-</div>
 
 <a class="prev" onclick="plusSlides(-1)">❮</a>
 <a class="next" onclick="plusSlides(1)">❯</a>
@@ -206,6 +184,9 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " active";
 }
+
+
+
 </script>
 <a href="https://kjohnso.github.io/KBJ"><h5>Home</h5</a>
 </body>
