@@ -1,232 +1,62 @@
-
-
 <!DOCTYPE html>
-<html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<style>
-* {
-box-sizing: border-box;
-}
+<head>
 
 
-body {font-family: helvecia, sans-serif;
-
-margin-left: 100px;
-margin-right: 100px;
-margin-bottom: 50px;
-margin-top: 50px;
-}
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
 
-
-h3 {
-text-align: center;
-font-size: 2.5em;
-font-weight: normal;
- color: #999999;
-
- margin-top: 0px;
-
-}
-
-h6 {
-text-align: left;
-font-size: .9em;
-font-weight: normal;
- color:  cornflowerblue;
-margin-left: 10px;
-margin-top: 0px;
-margin-bottom: 20px;
-
-}
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
 
+</head>
 
-.outer-grid {
-display: flex;
-flex-wrap: wrap;
-padding: 0 4px;
-}
-
-.inner-grid {
-flex: 33%;
-max-width: 33%;
-padding: 0 4px;
-}
-
-.inner-grid img {
-margin-top: 8px;
-width: 100%;
-padding: 10px;
-
-}
-
-.info-text {
- position: relative;
- color: grey;
- font-size: .5em;
- font-weight: bold;
- padding: 13px;
- flex-wrap: all;
-}
-   
-.colm-text {
- margin-left: 5px;
- color: #999999;
- font-size: 2em;
-}
-
-
-
-
-.colm-text2 {
- text-align: center;
- margin-left: 200px;
- color: #999999;
- font-size: 1.5em;
-}
-
-
-
-
-
-@media screen and (max-width: 800px) {
-.inner-grid {
-flex: 33%;
-max-width: 100%;
-}
-}
-@media screen and (max-width: 600px) {
-.inner-grid {
-flex: 100%;
-max-width: 100%;
-}
-
-</style>
 
 <body>
 
-<h3>KBJ Projects</h3>
-
-<div class="outer-grid">
-
+ 
+<div class="container">
 
 
-
- <div class="inner-grid">
-
-<img src="KarenInGarden.JPG">
-     <p><a href="https://kjohnso.github.io/Hobbies"><h6>Hobbies Diagram</h6></a>
+  <div class="row"> <h1>Karen's Projects</h1> </div>
 
 
 
 
+    <!-- Images will wrap after 3 in vertical orientaion orig === (col-12 col-md-4) or 2 in horiz ( col-6 col-md-6") ; later changed to -->
 
+
+
+  <div class="row">
+
+
+
+          <div class="col-sm-4"><image class="img-fluid" src="KBJ/KarenInGarden.JPG"  max-width=100% height=auto/></div>
+         <div class="col-sm-4"><image class="img-fluid" src="KBJ/SkullMug5.jpg" max-width=100% height=auto/><a href="https://kjohnso.github.io/PaintingsProg"><h6>Conte Gallery</h6></a></div>
+
+
+
+
+        <div class="col-sm-4"><image class="img-fluid" src="KBJ/MikeWithKensGuit.JPG" max-width=100% height=auto/> <a href="https://kjohnso.github.io/MikeProjects/"><h6>Photos of Mike's Projects</h6></a></div>
+
+      
+
+
+
+        <div class="col-sm-6"><image class="img-fluid" src="KBJ/Parks5.jpg" max-width=100% height=auto/><a href="https://kjohnso.github.io/Parks"><h6>Parks Map</h6></a></div>
+       <div class="col-sm-6"><image class="img-fluid" src="KBJ/Tilden2.jpg" max-width=100% height=auto/><a href="https://kjohnso.github.io/Ptng"><h6>Paintings</h6></a></div>
+          <div class="col-sm-6"><image class="img-fluid" src="KBJ/7TildenTrunk.jpg" max-width=100% height=auto/>  <a href="Tilden2022.html"><h6>Tilden 2022</h6></a>
+ </div>
 
 
   </div>
-
-
-  <div class="inner-grid">
-
-
-
- <a href="Tilden2022.html"><img src="7TildenTrunk.jpg"></a> 
-
-  <a href="Tilden2022.html"><h6>Tilden 2022</h6></a>
- 
-
-
-
-
-    <a href="https://kjohnso.github.io/PaintingsProg"><img src="SkullMug5.jpg"></a> 
-<p><a href="https://kjohnso.github.io/PaintingsProg"><h6>Ideas for Paintings</h6></a>
-
-
-
-
-
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
-  </div>
-
-
-
-
-  
-  <div class="inner-grid">
-
-
-
-
-     <a href="https://kjohnso.github.io/MikeProjects/"><img src="MikeWithKensGuit.JPG"></a> 
-
-
-
- <a href="https://kjohnso.github.io/MikeProjects/"><h6>Photos of Mike's Projects</h6></a>
-
-
-
-
-      <a href="https://kjohnso.github.io/Parks//"><img 
-        src="Parks5.jpg" ></a>  
-  <p><a href="https://kjohnso.github.io/Parks"><h6>Parks Map</h6></a>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-   
-
-
-  </div>
-
-
-
-
-
-
-
-
-     
-
-  
- 
-
-
-
-
-</div>
 
 
 
 </body>
+
+
 </html>
+
