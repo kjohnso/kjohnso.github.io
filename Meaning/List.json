@@ -23,12 +23,15 @@
 
 
 
-{"id": "Inspiration", "group": 2},
 
 
 
-{"id": "Collaboration", "group": 2},
-{"id": "Passion", "group": 2},
+
+{"id": "Collaborating", "group": 2},
+
+
+{"id": "Originating", "group": 2},
+
 
 {"id": "Caregiving", "group": 2},
 
@@ -36,8 +39,8 @@
 {"id": "Advocacy", "group": 2},
 
 {"id": "Acceptance", "group": 2},
-{"id": "Planning", "group": 2},
-{"id": "Peace", "group": 2},
+
+{"id": "Focus", "group": 2},
 
 
 {"id": "Goals", "group": 2},
@@ -59,13 +62,17 @@
 {"id": "Nature", "group": 2},
 
 
+{"id": "Connecting", "group": 2},
 
-{"id": "Teaching", "group": 2},
+{"id": "Feeling", "group": 2},
+{"id": "Sharing", "group": 2},
 
-{"id": "Experimenting", "group": 2},
 
 
-	{"id": "Authenticity", "group": 2},
+
+
+
+
 
 
   {"id": "Learning", "group": 2}
@@ -76,10 +83,10 @@
 
 
 
-
-
-
 {"source":"Meaning", "target": "Wisdom"},
+
+
+{"source":"Meaning", "target": "Creativity"},
 
 {"source":"Meaning", "target": "Mortality"},
 
@@ -87,7 +94,7 @@
 
 {"source":"Meaning", "target": "Generosity"},
 
-{"source":"Meaning", "target": "Creativity"},
+
 
 
 
@@ -108,18 +115,16 @@
 
 {"source":"Mortality", "target": "Acceptance"},
 {"source":"Mortality", "target": "Goals"},
-{"source":"Mortality", "target": "Planning"},
-{"source":"Mortality", "target": "Peace"},
+
+{"source":"Mortality", "target": "Focus"},
 
 
 
 
 
-{"source":"Creativity", "target": "Passion"},
 
-{"source":"Creativity", "target": "Inspiration"},
 
-{"source":"Creativity", "target": "Collaboration"},
+
 
 
 
@@ -140,10 +145,17 @@
 
 
 
-{"source":"Wisdom", "target": "Experimenting"},
-{"source":"Wisdom", "target": "Authenticity"},
-{"source":"Wisdom", "target": "Learning"},
-{"source":"Wisdom", "target": "Teaching"}
+{"source":"Wisdom", "target": "Feeling"},
+{"source":"Wisdom", "target": "Sharing"},
+
+
+
+{"source":"Creativity", "target": "Connecting"},
+{"source":"Creativity", "target": "Originating"},
+{"source":"Creativity", "target": "Collaborating"},
+
+{"source":"Wisdom", "target": "Learning"}
+
 
 
 
